@@ -25,6 +25,7 @@ error() {
 rm -rf device/mediatek/sepolicy_vndr
 rm -rf hardware/xiaomi
 rm -rf hardware/mediatek
+rm -rf packages/apps/Flash
 
 # Clone repository function
 cloneRepo() {

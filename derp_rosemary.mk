@@ -11,10 +11,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DERP stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rosemary
+# Derp Rosemary Flags
+TARGET_USES_MINI_GAPPS := true
+DERP_BUILDTYPE := COMMUNITY
+
+# Boot animation
+scr_resolution := 1080
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Blur properties
+TARGET_USES_BLUR := true
+
+PRODUCT_NAME := derp_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
