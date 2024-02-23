@@ -11,8 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
-# Inherit some common DERP stuff.
+# Inherit some common DerpFest Rosemary stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
 
 # Derp Rosemary Flags
 TARGET_USES_MINI_GAPPS := true

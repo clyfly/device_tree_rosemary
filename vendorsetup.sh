@@ -54,7 +54,7 @@ cloneRepo "https://github.com/mt6768-dev/android_hardware_xiaomi" "hardware/xiao
 cloneRepo "https://github.com/xiaomi-mediatek-devs/android_hardware_mediatek" "hardware/mediatek" "-b lineage-21"
 cloneRepo "https://github.com/xiaomi-mt6785-dev/proprietary_vendor_xiaomi_rosemary.git" "vendor/xiaomi/rosemary" "-b lineage-21"
 cloneRepo "https://github.com/Sicantik-Hanya-Gabut/krnl" "kernel/xiaomi/mt6785" "--depth=1 --single-branch -b lineage-21"
-
+cloneRepo "https://bitbucket.org/saikrishna1504/vendor_miuicameraleica" "vendor/MiuiCameraLeica"
 
 # Set up builder username and hostname
 export BUILD_USERNAME=rad
