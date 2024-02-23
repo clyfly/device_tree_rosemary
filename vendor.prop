@@ -82,6 +82,7 @@ persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 ro.opengles.version=196610
 ro.hardware.egl=meow
 ro.vendor.composer_version=2.2
+debug.sf.disable_client_composition_cache=1
 ro.vendor.mtk_dre30_support=1
 ro.vendor.mtk_pq_color_mode=1
 ro.vendor.mtk_prefer_64bit_proc=0
@@ -145,10 +146,15 @@ persist.vendor.mtk.volte.enable=1
 persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
 
+# Logd
+ro.logd.kernel=false
+
 # LMK
-ro.lmk.swap_free_low_percentage=20
+ro.lmk.psi_complete_stall_ms=70
+ro.lmk.psi_partial_stall_ms=70
+ro.lmk.swap_free_low_percentage=30
 ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=50
+ro.lmk.thrashing_limit_decay=2
 ro.lmk.swap_util_max=90
 ro.lmk.kill_timeout_ms=100
 
